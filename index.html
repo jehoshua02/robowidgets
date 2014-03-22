@@ -1,0 +1,137 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>RoboWidgets</title>
+    <meta name="description" content="Exquisite desserts for your special occassion.">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="robo-icons/styles.css">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header class="page-header-block group">
+
+    <div class="sticky-block">
+        <div class="page-wrap">
+
+            <div class="brand-block">
+                <a href="#home">
+                    <img class="logo" src="img/robologo.svg" />
+                    <span class="title"><strong>Robo</strong>Widgets</span>
+                </a>
+            </div>
+
+            <nav class="nav-block">
+                <a class="icon-hamburger compact-icon" href="#nav"><span>Navigation</span></a>
+
+                <div class="body">
+                    <a class="icon-links" href="#widgets"><span>Widgets</span></a>
+                    <a class="icon-blog" href="#write"><span>Blog</span></a>
+                    <a class="icon-vids" href="#video"><span>Vids</span></a>
+                    <a class="icon-shirt active" href="#store"><span>Store</span></a>
+                </div>
+            </nav>
+
+            <div class="search-block">
+                <a class="icon-search" href="#search"><span>Search</span></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page-wrap">
+
+        <form class="signup-block" action="" method="post">
+            <header>
+                <h1>Sign up</h1>
+            </header>
+
+            <div class="body">
+                <div class="name">
+                    <label>name</label><input type="text" />
+                </div>
+
+                <div class="email">
+                    <label>email</label><input type="text" />
+                </div>
+
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</header>
+
+<main class="page-content-block page-wrap">
+
+    <article class="main-article-block">
+
+        <header class="header-block">
+            <div class="img-wrap">
+                <img src="img/hdrimg.png" />
+            </div>
+            <h1>The average human will be 67% cyborg by 2025, scientists predict</h1>
+            <div class="by">by <a href="#author">Steve Johnson</a> staff writer</div>
+        </header>
+
+        <div class="content">
+
+            <p>Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula. Praesent scelerisque leo quis adipiscing porta. Donec at metus nisi. Quisque feugiat adipiscing odio, at convallis est dignissim ac.</p>
+
+            <p>Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula. Praesent scelerisque leo quis (<em>these are really columns</em>) adipiscing porta. Donec at metus nisi. Quisque feugiat adipiscing odio, at convallis est dignissim ac.</p>
+
+            <p>Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula. Praesent scelerisque leo quis adipiscing porta. Donec at metus nisi. Quisque feugiat adipiscing odio, at convallis est dignissim ac.</p>
+
+        </div>
+
+    </article>
+
+    <section class="recommended-articles-block group">
+        <article>
+            <img src="img/story1img.png" />
+            <h1>Resistence is futile</h1>
+            <p class="abstract">Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula.</p>
+        </article>
+
+        <article>
+            <img src="img/story2img.png" />
+            <h1>Destruction is immanent</h1>
+            <p class="abstract">Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula.</p>
+        </article>
+
+        <article>
+            <img src="img/story3img.png" />
+            <h1>You will be assimilated</h1>
+            <p class="abstract">Vivamus orci nisi, tincidunt vitae tellus quis, varius fermentum nulla. Maecenas leo magna, tristique vel vestibulum et, ullamcorper eget ligula.</p>
+        </article>
+    </section>
+
+</main>
+
+
+<!-- scripts -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $(document).on('click', '.nav-block .compact-icon, .nav-block.active .body', function (e) {
+        e.preventDefault();
+        $(this).closest('.nav-block').toggleClass('active');
+    });
+});
+</script>
+
+
+</body>
+</html>
