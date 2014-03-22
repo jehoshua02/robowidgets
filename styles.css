@@ -467,6 +467,7 @@ html {
     .signup-block {
         width: 100%;
         min-width: 100%;
+        margin-top: 140px;
     }
 
     .main-article-block .header-block .img-wrap {
@@ -488,6 +489,20 @@ html {
     .recommended-articles-block article:last-child:nth-child(odd) .abstract {
         width: 100%;
         float: none;
+    }
+
+    .page-header-block .sticky-block {
+        position: relative;
+    }
+
+    .main-article-block .header-block .img-wrap {
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    .main-article-block .header-block h1 {
+        padding-top: 390px;
     }
 }
 
